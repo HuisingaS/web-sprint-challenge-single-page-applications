@@ -4,14 +4,10 @@ import { useHistory } from 'react-router-dom';
 function Home() {
     const history = useHistory()
 
-    const routeToForm = () => {
-        history.push('/form')
-    }
-
     return (
         <div>
-            <h1>Click to fill out form</h1>
-            <button onClick={routeToForm}>to form</button>
+            <h2>Looking to Order a Pizza?</h2>
+            <button onClick={() => history.push('/pizza')}>Pizza?</button>
         </div>
     )
 };
